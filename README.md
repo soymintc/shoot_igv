@@ -35,5 +35,6 @@ cd test # test directory of the repo
 ```
 
 The resulting output is a png file with `${TUMOR_ISABL_SAMPLE_ID}_${NORMAL_ISABL_SAMPLE_ID}_chr${CHROMOSOME}_(( ${START_POSITION} - ${OFFSET} ))_(( ${END_POSITION} + ${OFFSET} )).png`.
+
 For example, the path for test output is: `test/snapshots/ADT001_ADG001_chr1_16699_16739.png` for `--isabl_sample_id ADT001` and `--region chr1:16719-16719`, with default offset of 20 bp.
 ![test/snapshots/ADT001_ADG001_chr1_16699_16739.png](test/snapshots/ADT001_ADG001_chr1_16699_16739.png)
