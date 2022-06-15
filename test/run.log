@@ -1,0 +1,115 @@
+Retrieving 1 from samples API endpoint...
+Retrieving 1 from experiments API endpoint...
+Retrieving 2 from analyses API endpoint...
+INFO:    Using cached image
+xdpyinfo:  unable to open display ":1".
+
+~~~ IGV SNAPSHOT AUTOMATOR ~~~
+
+Reference genome:
+hg19
+
+Track height:
+500
+
+IGV binary file:
+/IGV-snapshot-automator/igv.jar
+
+Output directory will be:
+snapshots
+
+Batchscript file will be:
+snapshots/IGV_snapshots.bat
+
+Region file:
+snapshots/_tmp_ADT001_ADG001_chr1_16699_16739.bed
+
+Input files to snapshot:
+
+/juno/work/shah/isabl_data_lake/analyses/27/85/2785/results/42-06388_S4.bam
+/juno/work/shah/isabl_data_lake/analyses/27/82/2782/results/42-06497_S1.bam
+
+Making the output directory...
+
+Writing IGV batch script to file:
+snapshots/IGV_snapshots.bat
+
+
+Getting regions from BED file...
+
+Read 1 regions
+
+Open Xvfb port found on:
+1
+
+
+IGV command is:
+xvfb-run --auto-servernum --server-num=1 java -Xmx4000m -jar /IGV-snapshot-automator/igv.jar -b snapshots/IGV_snapshots.bat
+
+
+Current time is:
+2022-06-15 11:53:55.748407
+
+
+Running the IGV command...
+WARN [2022-06-15 15:53:57,644]  [Globals.java:138] [AWT-EventQueue-0]  Development mode is enabled
+INFO [2022-06-15 15:53:57,733]  [DirectoryManager.java:171] [AWT-EventQueue-0]  IGV Directory: /home/chois7/igv
+INFO [2022-06-15 15:53:57,733] [DirectoryManager.java:171]  IGV Directory: /home/chois7/igv
+INFO [2022-06-15 15:53:57,736]  [Main.java:154] [AWT-EventQueue-0]  Startup  IGV Version 2.4.10 03/20/2018 10:50 PM
+INFO [2022-06-15 15:53:57,736]  [Main.java:155] [AWT-EventQueue-0]  Java 1.8.0_292
+INFO [2022-06-15 15:53:57,736]  [DirectoryManager.java:76] [AWT-EventQueue-0]  Fetching user directory... 
+INFO [2022-06-15 15:53:57,763]  [Main.java:156] [AWT-EventQueue-0]  Default User Directory: /home/chois7
+INFO [2022-06-15 15:53:57,763]  [Main.java:157] [AWT-EventQueue-0]  OS: Linux
+
+
+Jun 15, 2022 3:53:57 PM java.util.prefs.FileSystemPreferences$6 run
+WARNING: Prefs file removed in background /home/chois7/.java/.userPrefs/prefs.xml
+INFO [2022-06-15 15:53:58,388]  [Main.java:202] [Thread-3]  A later version of IGV is available (2.12.2)
+
+(process:3696): Gtk-WARNING **: Locale not supported by C library.
+	Using the fallback 'C' locale.
+INFO [2022-06-15 15:54:09,147]  [GenomeManager.java:186] [pool-2-thread-1]  Loading genome: /home/chois7/igv/genomes/hg19.genome
+INFO [2022-06-15 15:54:11,951]  [GenomeComboBox.java:79] [AWT-EventQueue-0]  Enter genome combo box
+INFO [2022-06-15 15:54:11,983]  [GenomeManager.java:275] [pool-2-thread-1]  Genome loaded.  id= hg19
+INFO [2022-06-15 15:54:12,158]  [CommandListener.java:120] [Thread-7]  Listening on port 60151
+INFO [2022-06-15 15:54:12,168]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: new
+
+INFO [2022-06-15 15:54:15,056]  [CommandExecutor.java:235] [pool-2-thread-2]  OK
+INFO [2022-06-15 15:54:15,057]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: genome hg19
+
+INFO [2022-06-15 15:54:15,058]  [IGVCommandBar.java:165] [pool-2-thread-2]  Selecting genome hg19
+INFO [2022-06-15 15:54:15,060]  [GenomeComboBox.java:79] [AWT-EventQueue-0]  Enter genome combo box
+INFO [2022-06-15 15:54:17,061]  [CommandExecutor.java:235] [pool-2-thread-2]  OK
+INFO [2022-06-15 15:54:17,062]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: snapshotDirectory snapshots
+
+INFO [2022-06-15 15:54:19,063]  [CommandExecutor.java:235] [pool-2-thread-2]  OK
+INFO [2022-06-15 15:54:19,064]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: load /juno/work/shah/isabl_data_lake/analyses/27/85/2785/results/42-06388_S4.bam
+
+INFO [2022-06-15 15:54:19,078]  [IGV.java:1383] [pool-2-thread-2]  Loading 1 resources.
+INFO [2022-06-15 15:54:19,079]  [TrackLoader.java:126] [pool-2-thread-2]  Loading resource, path /juno/work/shah/isabl_data_lake/analyses/27/85/2785/results/42-06388_S4.bam
+INFO [2022-06-15 15:54:21,351]  [CommandExecutor.java:235] [pool-2-thread-2]  OK
+INFO [2022-06-15 15:54:21,352]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: load /juno/work/shah/isabl_data_lake/analyses/27/82/2782/results/42-06497_S1.bam
+
+INFO [2022-06-15 15:54:21,363]  [IGV.java:1383] [pool-2-thread-2]  Loading 1 resources.
+INFO [2022-06-15 15:54:21,364]  [TrackLoader.java:126] [pool-2-thread-2]  Loading resource, path /juno/work/shah/isabl_data_lake/analyses/27/82/2782/results/42-06497_S1.bam
+INFO [2022-06-15 15:54:23,428]  [CommandExecutor.java:235] [pool-2-thread-2]  OK
+INFO [2022-06-15 15:54:23,429]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: maxPanelHeight 500
+
+INFO [2022-06-15 15:54:23,454]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: goto chr1:16699-16739
+
+INFO [2022-06-15 15:54:23,576]  [HttpUtils.java:873] [AWT-EventQueue-0]  Range-byte request succeeded
+INFO [2022-06-15 15:54:26,873]  [CommandExecutor.java:235] [pool-2-thread-2]  OK
+INFO [2022-06-15 15:54:26,874]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: group strand
+
+INFO [2022-06-15 15:54:28,918]  [CommandExecutor.java:235] [pool-2-thread-2]  OK
+INFO [2022-06-15 15:54:28,919]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: snapshot ADT001_ADG001_chr1_16699_16739
+
+Snapshot: /juno/work/shah/users/chois7/tickets/SHAH-3703_igv/test/snapshots/ADT001_ADG001_chr1_16699_16739
+INFO [2022-06-15 15:54:31,211]  [CommandExecutor.java:235] [pool-2-thread-2]  OK
+INFO [2022-06-15 15:54:31,212]  [BatchRunner.java:72] [pool-2-thread-2]  Executing Command: exit
+
+INFO [2022-06-15 15:54:31,213]  [ShutdownThread.java:47] [Thread-2]  Shutting down
+
+IGV finished; elapsed time is:
+0:00:35.821339
+
