@@ -1,4 +1,4 @@
-# ShootIGV: IGV snapshot automator wrapper
+# Shoot IGV: IGV snapshot automator wrapper
 
 ### Preface
 
@@ -6,8 +6,14 @@ This tool is a wrapper that uses scripts from [IGV-snapshot-automator by stevekm
 
 ### Install
 
-1. Install [isabl-cli](https://github.com/shahcompbio/isabl_cli)
-2. Install click by e.g. `pip install click` in your environment
+1. Install [isabl-cli](https://github.com/shahcompbio/isabl_cli), by e.g.
+```
+git clone https://github.com/shahcompbio/isabl_cli
+cd isabl_cli
+pip install .
+```
+
+2. Install `click` by e.g. `pip install click` in your environment
 
 ### Run shoot_igv.py
 
@@ -36,6 +42,8 @@ cd test # test directory of the repo
 
 The resulting output is a png file with `${TUMOR_ISABL_SAMPLE_ID}_${NORMAL_ISABL_SAMPLE_ID}_chr${CHROMOSOME}_(( ${START_POSITION} - ${OFFSET} ))_(( ${END_POSITION} + ${OFFSET} )).png`.
 
-For example, the path for test output is: `test/snapshots/ADT001_ADG001_chr1_16699_16739.png` for `--isabl_sample_id ADT001` and `--region chr1:16719-16719`, with default offset of 20 bp.
+For example, the path for test output is: `test/snapshots/ADT001_ADG001_chr1_16699_16739.png` for 
+- `--isabl_sample_id ADT001` 
+- `--region chr1:16719-16719` (with default flanking offset of 20 bp)
 
 ![test/snapshots/ADT001_ADG001_chr1_16699_16739.png](test/snapshots/ADT001_ADG001_chr1_16699_16739.png)
