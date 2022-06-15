@@ -1,10 +1,10 @@
 # Shoot IGV: IGV snapshot automator wrapper
 
-### Preface
+## Preface
 
 This tool is a wrapper that uses scripts from [IGV-snapshot-automator by stevekm](https://github.com/stevekm/IGV-snapshot-automator) that are made into a singularity image.
 
-### Install
+## Requirements
 
 1. Install [isabl-cli](https://github.com/shahcompbio/isabl_cli), by e.g.
 ```
@@ -15,7 +15,7 @@ pip install .
 
 2. Install `click` by e.g. `pip install click` in your environment
 
-### Run shoot_igv.py
+## Run shoot_igv.py
 
 shoot_igv.py takes in the following options:
 
@@ -34,6 +34,8 @@ Options:
   --help                  Show this message and exit.
 ```
 
+## Example
+
 One example of this would be the following, which is equivalent of the `test/run.sh` script.
 ```
 cd test # test directory of the repo
@@ -45,5 +47,7 @@ The resulting output is a png file with `${TUMOR_ISABL_SAMPLE_ID}_${NORMAL_ISABL
 For example, the path for test output is: `test/snapshots/ADT001_ADG001_chr1_16699_16739.png` for 
 - `--isabl_sample_id ADT001` 
 - `--region chr1:16719-16719` (with default flanking offset of 20 bp)
+
+### Example output image
 
 ![test/snapshots/ADT001_ADG001_chr1_16699_16739.png](test/snapshots/ADT001_ADG001_chr1_16699_16739.png)
